@@ -39,3 +39,12 @@ pip install -r requirements.txt
 OPENAI_API_KEY=your_openai_api_key_here
 OPENAI_MODEL_NAME=your_open_ai_model_here
 ```
+
+## Note
+Note that this will only work on websites that can be scraped using this simplistic approach.
+
+Websites that are rendered with Javascript, like React apps, won't show up. See the community-contributions folder for a Selenium implementation that gets around this. You'll need to read up on installing Selenium (ask ChatGPT!)
+
+Also Websites protected with CloudFront (and similar) may give 403 errors.
+
+But many websites will work just fine!
